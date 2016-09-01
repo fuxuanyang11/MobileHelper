@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.speedupdemo.view.TitleLayout
+        android:id="@+id/fileinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" >
+    </com.example.speedupdemo.view.TitleLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12.5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5" 
+            android:background="@drawable/home_entry_item_normal">
+			<TextView 
+			    android:id="@+id/fileinfo_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+				android:textSize="15sp"
+				android:gravity="center"/>
+            <TextView
+                android:id="@+id/fileinfo_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_toRightOf="@id/fileinfo_text1"
+                android:layout_alignBaseline="@id/fileinfo_text1"/>
+            <TextView
+                android:id="@+id/fileinfo_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/fileinfo_count"
+                android:layout_alignBaseline="@id/fileinfo_count"/>
+            <TextView
+                android:id="@+id/fileinfo_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_toRightOf="@id/fileinfo_text2"
+                android:layout_alignBaseline="@id/fileinfo_text2"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" >
+
+            <ListView
+                android:id="@+id/fileinfo_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2" >
+
+                <ImageView
+                    android:id="@+id/fileinfo_iv_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/check_rect_correct_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9" >
+
+                <TextView
+                    android:id="@+id/fileinfo_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/speedup_shape_normal"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

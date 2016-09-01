@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/listview_selector">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" 
+        android:gravity="center">
+	
+        <!--防止checkBox抢占焦点  -->
+        <!--clickable="false":还是可以监听，点击框以外的就获取不到。 -->
+        <CheckBox
+            android:id="@+id/fileinfo_item_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/fileinfo_item_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical">
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+             <TextView
+        android:id="@+id/fileinfo_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <TextView
+        android:id="@+id/fileinfo_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1">
+	    <TextView 
+	        android:id="@+id/fileinfo_item_size"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+   
+
+</LinearLayout>

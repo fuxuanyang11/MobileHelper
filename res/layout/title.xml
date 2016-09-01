@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/title_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/home_entry_item_normal"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_homeasup_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@drawable/home_entry_item_normal"
+            android:orientation="horizontal" >
+            
+            <LinearLayout 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="8" >
+                 <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1" >
+                
+            </LinearLayout>
+
+           
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

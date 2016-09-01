@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="speed_up">手机加速</string>
+    <string name="software_manager">软件管理</string>
+    <string name="detection">手机检测</string>
+    <string name="message">通讯大全</string>
+    <string name="file_manager">文件管理</string>
+    <string name="garbage_clear">垃圾清理</string>
+    <string name="twenty_three">23</string>
+    <string name="percent">%</string>
+    <string name="title">AZY手机管家</string>
+    <string name="clean">一键清理</string>
+    <string name="android">ANDROID</string>
+    <string name="version">VPhone Android4.4.2</string>
+    <string name="inner_space">手机内置空间</string>
+    <string name="outer_space">外置存储空间</string>
+    <string name="all_software">所有软件</string>
+    <string name="system_software">系统软件</string>
+    <string name="user_software">用户软件</string>
+    <string name="uninstall_software">卸载所选软件</string>
+    <string name="instruct">跳过SKIP</string>
+
+</resources>

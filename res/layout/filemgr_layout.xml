@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.example.speedupdemo.view.TitleLayout 
+        android:id="@+id/filemgr_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        
+    </com.example.speedupdemo.view.TitleLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@android:color/holo_blue_dark">
+        
+        <TextView 
+            android:id="@+id/filemgr_tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"/>
+        <TextView 
+            android:id="@+id/filemgr_tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/filemgr_tv_text1"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@id/filemgr_tv_text1"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+        
+        <ListView 
+            android:id="@+id/filemgr_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp">
+            
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
